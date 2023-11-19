@@ -44,7 +44,8 @@ by Apache:
 
 ---------------------------
 
-**ZooKeeper**
+**ZooKeeper**:
+
 ZooKeeper is a distributed coordination service used to manage and coordinate large-scale distributed systems. It provides a set of essential services such as synchronization, configuration management, and leader election, making it fundamental for building robust and reliable distributed systems.
 
 bin Folder
