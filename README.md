@@ -1,6 +1,8 @@
 # MyOwnDrive_1.1
 The following project is the simplest version of my first repository 'MyOwnDrive,' which I plan to finish in the future. However, due to time constraints and project deadlines at school, I was forced to use some tools to facilitate the work.
 
+---------------------------
+
 For the latest information about ZooKeeper, please visit our website at:
 
    http://zookeeper.apache.org/
@@ -38,7 +40,7 @@ are deployed to the Apache Maven repository after the release has been accepted
 by Apache:
   http://people.apache.org/repo/m2-ibiblio-rsync-repository/
 
-/* ********************************************************************************************* */
+---------------------------
 
 **ZooKeeper**
 ZooKeeper is a distributed coordination service used to manage and coordinate large-scale distributed systems. It provides a set of essential services such as synchronization, configuration management, and leader election, making it fundamental for building robust and reliable distributed systems.
