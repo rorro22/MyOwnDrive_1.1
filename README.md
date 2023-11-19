@@ -1,7 +1,8 @@
 # MyOwnDrive_1.1
 _The following project is the simplest version of my first repository 'MyOwnDrive,' which I plan to finish in the future. However, due to time constraints and project deadlines at school, I was forced to use some tools to facilitate the work.
-*In the 'origin' branch, you can find the backend files.*_
---------------------------------------------------------
+
+_*In the 'origin' branch, you can find the backend files.*_
+
 ---------------------------
 
 For the latest information about ZooKeeper, please visit our website at:
@@ -55,6 +56,7 @@ This file is used to start the ZooKeeper Command Line Interface (CLI). Through t
 zkServer.cmd (ZooKeeper Server):
 This file is used to start the ZooKeeper server. The server is responsible for managing and coordinating the distributed state among the cluster nodes. Running this script initializes the ZooKeeper server and prepares it to accept client connections.
 
+--------------------------------------------------------
 **Usage**:
 
 Start the ZooKeeper Server:
