@@ -1,5 +1,5 @@
 # MyOwnDrive_1.1
-_The following project is the simplest version of my first repository 'MyOwnDrive,' which I plan to finish in the future. However, due to time constraints and project deadlines at school, I was forced to use some tools to facilitate the work.
+_The following project is the simplest version of my first repository 'MyOwnDrive,' which I plan to finish in the future. However, due to time constraints and project deadlines at school, I was forced to use some tools to facilitate the work._
 
 _*In the 'origin' branch, you can find the backend files.*_
 
