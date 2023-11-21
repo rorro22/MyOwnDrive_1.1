@@ -71,3 +71,6 @@ Execute the following command in the terminal to start the ZooKeeper Command Lin
 
 C:\path\to\zookeeper-3.4.12\bin>zkCli.cmd
 This will take you to the interactive ZooKeeper Command Line Interface where you can perform various operations.
+
+
+*Note: The project is currently in the master branch. 
