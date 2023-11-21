@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Elevated Distributed Search</title>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="ui_assets/style.css">
+    <script type="text/javascript" src="ui_assets/javascript.js"></script>
+</head>
+<body>
+    <div id="layout">
+        <h1>Busca el nombre del articulo que deseas</h1>
+        <div>
+            <input type="text" id="search_text">
+        </div>
+        <br/>
+        <div>
+            Compatibilidad con archivos en nuestro sistema:
+            <input type="text" id="num_results" class="num_input">
+        </div>
+        <div>
+            Minima ompatibilidad con archivos en nuestro sistema:
+            <input type="text" id="min_score" class="num_input">
+        </div>
+        <br/>
+        <div>
+            <button id="submit_button">buscador Misa</button>
+        </div>
+        <div id="no_results_error"><br/>No se han detectado resultados. Verifica el nombre escrito en el buscador.</div>
+        <div id="results">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Documento</th>
+                        <th>Compatibilidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
