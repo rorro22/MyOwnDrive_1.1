@@ -52,16 +52,14 @@ public class ServiceRegistry implements Watcher {
     }
 
     private void createServiceRegistryNode() {
-        try {
-            if (zooKeeper.exists(serviceRegistryZnode, false) == null) {
-                zooKeeper.create(serviceRegistryZnode, new byte[]{}, ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
-            }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (KeeperException e) {
-            e.printStackTrace();
+    try {
+        if (zooKeeper.exists(serviceRegistryZnode, false) == null) {
+            zooKeeper.create(serviceRegistryZnode, new byte[]{}, ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
         }
+    } catch (InterruptedException | KeeperException e) {
+        e.printStackTrace();
     }
+}
 
     public synchronized List<String> getAllServiceAddresses() throws KeeperException, InterruptedException {
         if (allServiceAddresses == null) {

@@ -11,15 +11,20 @@ import java.io.IOException;
  * Search Cluster Coordinator - Distributed Search Part 2
  */
 public class Suspect implements Watcher {
-    private static final String ZOOKEEPER_ADDRESS = "localhost:2181";
+    private static final String ZOOKEEPER_ADDRESS = "zookeeper:2181";
     private static final int SESSION_TIMEOUT = 3000;
     private ZooKeeper zooKeeper;
 
     public static void main(String[] args) throws IOException, InterruptedException, KeeperException {
-        int currentServerPort = 8080;
+        int currentServerPort = 8081;
+        String portEnv = System.getenv("PORT");
+
         if (args.length == 1) {
             currentServerPort = Integer.parseInt(args[0]);
+        }else if(portEnv != null && !portEnv.isEmpty()) {
+            currentServerPort = Integer.parseInt(portEnv);
         }
+        
         Suspect Suspect = new Suspect();
         ZooKeeper zooKeeper = Suspect.connectToZookeeper();
 
