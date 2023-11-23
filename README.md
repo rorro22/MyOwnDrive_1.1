@@ -53,6 +53,8 @@ MyOwnDrive is a distributed file system with a frontend application that connect
 
   - **Backend:** Java
   - **Frontend:** HTML, CSS, JavaScript
+  - **Containerization:** Docker
+  - **Load Balancer:** HAProxy
 
 ## Future Enhancements
 
@@ -97,13 +99,43 @@ The ZooKeeper server plays a critical role in the MyOwnDrive system. It serves a
   
   - Start the frontend application and ensure that the ZooKeeper server is running for proper system coordination.
 
+5. **Updates**
+   _Docker and HAProxy Integration_
+   
+    We have streamlined the deployment process of MyOwnDrive by incorporating Docker for containerization and HAProxy for load balancing. This integration enhances the ease of deployment and optimizes the overall performance of the     application.
+    
+    HAProxy Load Balancing
+    We've implemented HAProxy as a load balancer to efficiently distribute incoming traffic across the multiple nodes of the distributed file system. This ensures improved resource utilization, high availability, and a seamless user experience.
+    
+    How it Works
+    HAProxy intelligently routes requests to the appropriate nodes based on their roles, such as Search, Storage, Calculation, and Provisioning nodes. This distribution optimizes the load on each node, preventing bottlenecks and enhancing the system's responsiveness.
+    
+    Metrics Monitoring
+    HAProxy exposes metrics on port 83. You can monitor the load balancer's performance by accessing http://localhost:83. These metrics provide valuable insights into the traffic distribution and health of the system.
+    
+    Docker-Compose for Simplified Deployment
+    To facilitate a straightforward and optimal setup of the entire application stack, we've provided a Docker Compose configuration.
+    
+    Getting Started with Docker
+    Install Docker: Ensure Docker is installed on your system. You can download it from the official Docker website.
+    
+    Run Docker Compose:
+    
+    docker-compose up
+    This command initializes the application stack, including the MyOwnDrive containers and the HAProxy load balancer, in detached mode.
+    
+    Access the Application:
+    Open your web browser and navigate to the frontend application at http://localhost:9000 or http://localhost:9001 or http://localhost:9002 or http://localhost:9003.
+    
+    Ensure that the ZooKeeper server, as well as the Docker and HAProxy containers, are running for the coordinated functioning of the system.
+
 ## Contributions and Issues
 
-We welcome contributions and feedback! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
+  We welcome contributions and feedback! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE). Feel free to modify and adapt it to your needs. If you have any recommendations or improvements, we encourage you to contribute!
-
+  This project is licensed under the [MIT License](LICENSE). Feel free to modify and adapt it to your needs. If you have any recommendations or improvements, we encourage you to contribute!
+  
 *Note: The backend is currently implemented in Java. While it serves the purpose well, considering the evolving technology landscape, I personally recommend exploring the use of GoLang for future development. GoLang's simplicity, concurrency support, and efficient performance make it an excellent choice for distributed systems like MyOwnDrive.*
