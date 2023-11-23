@@ -14,7 +14,7 @@ MyOwnDrive is a distributed file system with a frontend application that connect
     - *Calculation Node:* Performs calculations related to ebook compatibility, enhancing the user experience.
     - *Provisioning Node:* Manages the provision of ebooks, ensuring efficient access for users.
  
-  *Note:    In a distributed application with a node-based architecture, each type of node can have specific functions, and their contribution is crucial for the joint operation of the system. The need to start the nodes before seeing     information may be due to various factors, including task distribution, coordination, and synchronization between nodes. Here is a description of the general functions of the four types of nodes you mentioned:
+  *Note:    In a distributed application with a node-based architecture, each type of node can have specific functions, and their contribution is crucial for the joint operation of the system. The need to start the nodes before seeing     information may be due to various factors, including task distribution, coordination, and synchronization between nodes. Here is a description of the general functions of the four types of nodes mentioned:
             
     **Search Node**:
             
